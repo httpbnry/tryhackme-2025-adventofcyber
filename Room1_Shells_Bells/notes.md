@@ -192,6 +192,15 @@ Im going to use the same command as before:
 
 `gpg --decrypt dir.tar.gz.gpg` 
 
+This gives us a *dir.tar.gz*, that we still have to unzip, so using **tar** we unzip the directory
+
+`tar -xvzf dir.tar.gz`
+
+-x extracts files 
+-v says what files are being extracted
+-z gzip, also decompresses de .gz
+-f file to work on
+
 -----------------
 ## SUMMARY / FEEDBACK
 
