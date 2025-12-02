@@ -8,7 +8,7 @@ We connect via ssh with the password
 **password:** AoC2025!
 
 ---------
-##PART 1 - FINDING THE GUIDE
+## PART 1 - FINDING THE GUIDE
 
 First of all we see a *README.txt* file after logging and executing `ls`, that we cat out.
 
@@ -38,7 +38,7 @@ head to */var/log* and to use `grep` to check the logs.
 He says to look for eggs that want to hide, and check their shells.
 
 --------
-##PART 2 - FILTERING LOGS
+## PART 2 - FILTERING LOGS
 
 We head to */var/log/* using `cd /var/log/`
 
@@ -60,7 +60,7 @@ got in and left some malware.
 
 
 --------------------
-##PART 3 - ANALYZING SOCMAS
+## PART 3 - ANALYZING SOCMAS
 
 We head into the users **socmas home directory**, *using `cd /home/socmas`. We explore the *2025 directory*
 where we find various files, but especially a *eggstrike.sh* file (sh files are shell script files that 
@@ -71,7 +71,7 @@ We cat it out and we find the next flag.
 `cat eggstrike.sh`
 
 ------------------
-##PART 4 - ROOT USER / BASH HISTORY
+## PART 4 - ROOT USER / BASH HISTORY
 
 To enter root mode just execute `sudo su`, that normally requires a password but in this server it's not
 necessary. 
@@ -87,7 +87,7 @@ cat .bash_history
 This will give you the final flag.
 
 ----------------
-##PART 5 - INTERMEDIATE CHALLANGE
+## PART 5 - INTERMEDIATE CHALLANGE
 
 The intermediate challange is located in the */home/mcskidy/Documents* directory. Lets head over there
 using `cd /home/mcskidy/Documents`. 
@@ -121,7 +121,7 @@ Lets log in to his account
 
 Then we head to */home/eddi_knapp/*. Where we list all his files using: `ls -la`
 
-###FIRST CLUE 
+### FIRST CLUE 
 
 The first clue reffers to something that exists only when you are logged in, and is not a regular file.
 It says that we need to open it when we arrive (im guessing this is when we log in).
@@ -134,7 +134,7 @@ So lets see.
 
 This prints out all the enviroment variables, and when i scroll through, we get the first fragment.
 
-###SECOND CLUE
+### SECOND CLUE
 
 The second clue reffers to the history and the past, giving comparison to a trees rings. It really gives it
 out with *Read the ledger's older pages*. 
@@ -147,7 +147,7 @@ First of all i entered */home/eddi_knapp/.secret_git* and i did `git status` whe
 secret_message.txt was deleted, so with the help of **logs** and `git revert [hash]` i was able to revert
 changes and cat out **PASSFRAG3** 
 
-###THIRD CLUE
+### THIRD CLUE
 
 The third clue talks about pixels sleeping and saying something, it was hard to guess but with some help
 i got to the conclusion of image files having text at the end.
@@ -164,7 +164,7 @@ Then i used the strings command to print out the **PASSFRAG2**
 
 -----------------
 
-##PART 6 - FIXING THE SITE
+## PART 6 - FIXING THE SITE
 
 Okay, so now that we have the entire passphrase, we can go to the encrypted message in */home/eddi_knapp/Documents*
 and we decode it with:
@@ -193,7 +193,7 @@ Im going to use the same command as before:
 `gpg --decrypt dir.tar.gz.gpg` 
 
 -----------------
-##SUMMARY / FEEDBACK
+## SUMMARY / FEEDBACK
 
 - This room covered many features like hidden files, investigating logs, identifying malicious accounts, etc..
 
