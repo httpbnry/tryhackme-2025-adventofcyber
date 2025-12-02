@@ -33,10 +33,10 @@ That when we cat out gets the first flag
 ```
 cat .guide.txt
 ```
-
 This file also tells us King Malhares plan and gives us a Guide that tells us to
 head to */var/log* and to use `grep` to check the logs.
 He says to look for eggs that want to hide, and check their shells.
+
 --------
 ##PART 2 - FILTERING LOGS
 
@@ -49,6 +49,7 @@ Now, using `grep` we see any failed login attempts.
 `grep "Failed password" auth.log`
 
 I scroll through it and one catches my eye.
+
 ```
 2025-10-13T01:46:15.878653+00:00 tbfc-web01 sshd[2453]: message repeated 2 times: [ Failed password for socmas
  from eggbox-196.hopsec.thm port 14040 ssh2] 
@@ -103,17 +104,11 @@ He also gives us three clues.
 
 Clues (one for each egg):
 
-1)
-I ride with your session, not with your chest of files. 
-Open the little bag your shell carries when you arrive. 
+1) I ride with your session, not with your chest of files. Open the little bag your shell carries when you arrive. 
 
-2)
-The tree shows today; the rings remember yesterday.
-Read the ledger’s older pages.
+2) The tree shows today; the rings remember yesterday. Read the ledger’s older pages.
 
-3)
-When pixels sleep, their tails sometimes whisper plain words.
-Listen to the tail.
+3) When pixels sleep, their tails sometimes whisper plain words. Listen to the tail.
 
 He says that when we finish, join the fragments in order and use the passcode to decrypt the message i left.
 
@@ -166,6 +161,7 @@ Then i saw a hidden picture called **.easter_egg**.
 Then i used the strings command to print out the **PASSFRAG2**
 
 `strings .easter_egg`
+
 -----------------
 
 ##PART 6 - FIXING THE SITE
@@ -195,6 +191,7 @@ This tells us that when we head to */home/eddi_knapp/.secret* we can use the fla
 Im going to use the same command as before:
 
 `gpg --decrypt dir.tar.gz.gpg` 
+
 -----------------
 ##SUMMARY / FEEDBACK
 
