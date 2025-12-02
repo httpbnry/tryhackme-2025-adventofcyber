@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-Educational-blue)
 
 A repository containing my solutions for the **TryHackMe 2025 Advent of Cyber** challenges.  
-Organized room by room, including notes, decoded messages, screenshots, and captured flags.
+Organized room by room, including notes, decoded messages, screenshots, etc...
 
 ---
 
