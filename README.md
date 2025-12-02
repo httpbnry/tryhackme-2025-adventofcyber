@@ -10,17 +10,6 @@ Organized room by room, including notes, decoded messages, screenshots, etc...
 
 ---
 
-## 📂 Repository Structure
-
-Each room has its own folder with the following typical structure:
-
-RoomX_RoomName/
-├─ notes.md # Notes and step-by-step solutions
-└─ *.png # Screenshots or supporting images
-
-
----
-
 ## 🚀 Rooms Progress Tracker
 
 | Room | Status | Notes |
@@ -30,7 +19,6 @@ RoomX_RoomName/
 | Room 3 | ⬜ Pending | To be completed |
 | … | ⬜ Pending | … |
 
-> You can update this table as you progress through the Advent of Cyber rooms.
 
 ---
 
