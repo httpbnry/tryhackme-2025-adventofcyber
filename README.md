@@ -16,7 +16,10 @@ Organized room by room, including notes, decoded messages, screenshots, etc...
 |------|--------|-------|
 | Room 1: Shells Bells | ✅ Completed | Notes and key to side quest included |
 | Room 2: Merry Clickas | ✅ Completed | Notes completed |
-| Room 3 | ⬜ Pending | To be completed |
+| Room 3: Did You SEAM | ✅ Completed | Notes completed|
+| Room 4 | ⬜ Pending | To be completed |
+| Room 5 | ⬜ Pending | To be completed |
+| Room 6 | ⬜ Pending | To be completed |
 | … | ⬜ Pending | … |
 
 
