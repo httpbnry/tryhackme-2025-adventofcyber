@@ -68,3 +68,63 @@ So we start up **PeStudio** and **Drag and Drop** `HopHelper.exe` (*in the folde
 Now we can see a lot of information about the file without having to execute it.
 
 First of all things you can see `file > sha256`, this is the **Checksum**, which is a identifier for the executable. Lets keep a note of this to answer **QUESTION 1 of the room**
+
+Next, we are going to check the strings, in the left side, you can see a section called **strings**, click on that.
+
+> It might take a while to load.
+
+Here, we are going to answer **question two**. *So lets search for a string with the THM flag format (*THM{....}*).
+
+You can be more effective by hitting on **values** so that it sorts it self in alphabetical order.
+
+## DYNAMIC ANALYSIS
+
+In this section is going to introduce us to **Dynamic Analysis**, which envolves executing the malicious sample to identify its behaviour.
+
+#### Regshot
+
+Regshot is widely used utility in analysing malware on windows. It works by **creating snapshots of the registry**, one before its ran and one after. Comparing results for answers.
+
+> Malware aims to **establish persistence**, meaning it seeks to run as soon as device is switched on.
+
+Before running `HopHelper.exe`, lets create a snapshot of our current registry.
+
+Booting up **RegShot**, lets capture the system as it already is. So we hit on **1st shot** (this might take a few minutes to complete).
+
+**After the capture is taken** we can boot up `HopHelper.exe`, after that, we take **another snapshot** to compare both.
+
+After the second snapshot is taken, we hit **Compare**.
+
+With the results we can answer **Question number 3** (Full path of modified registry value)
+
+> **Remember:** Persistance seeks to run as soon as the user boots up the computer. Look for the word `run`.
+
+#### ProcMon
+
+Now we are going to use **ProcMon** (*Process Monitor*) which is used to monitor and investigate how processes are interacting with the windows operating system. Its a powerfull tool to see exactly what a process is doing.
+
+Lets open the shortcut in the **desktop**, it will automaticly capture events of various on the system.
+
+We open up `HopHelper.exe` again and check ProcMon to see how it interacts with the system. 
+
+First of all we can see a **TCP send** operation to a external ip.
+
+> Another way to search this is using the filter tool: where we can filter by displaying **Process name** with the names TCP Send, etc..
+
+After many failed attempts, i filtered so only TCP operations show up using:
+
+`Operation` `Contains` `TCP` then `include` 
+
+Then hitting ok, after scrolling you can see some use a protocol very commonly used.
+
+---
+
+I think the bonus questions answer is **Akami** but i dont know.
+
+---
+
+## SUMMARY / FEEDBACK
+
+- I really like this room, malware analysis is one of my favorite cybersecurity subjects.
+
+- It was challanging and i liked that you had to do stuff yourself.
