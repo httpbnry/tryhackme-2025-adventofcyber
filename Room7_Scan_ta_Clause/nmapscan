@@ -1,0 +1,12 @@
+# Nmap 7.95 scan initiated Thu Dec 11 07:16:06 2025 as: /usr/lib/nmap/nmap -sV -sC -oN nmapscan 10.66.176.214
+Nmap scan report for 10.66.176.214
+Host is up (0.10s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE    VERSION
+22/tcp open  tcpwrapped
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+80/tcp open  http       nginx
+|_http-title: TBFC QA \xE2\x80\x94 EAST-mas
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 11 07:16:27 2025 -- 1 IP address (1 host up) scanned in 21.41 seconds
