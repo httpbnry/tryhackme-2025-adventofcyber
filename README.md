@@ -19,8 +19,8 @@ Organized room by room, including notes, decoded messages, screenshots, etc...
 | Room 3: Did You SEAM | ✅ Completed | Notes completed |
 | Room 4: Old sAInt Nick | ✅ Completed  | Notes completed |
 | Room 5: Santas Little IDOR | ✅ Completed  | Notes completed |
-| Room 6: Egg-xecutable | ✅ Completed | To be completed |
-| Room 7 | ⬜ Pending | To be completed |
+| Room 6: Egg-xecutable | ✅ Completed | Notes completed |
+| Room 7: Scan-ta Clause| ✅ Completed | Notes completed |
 | Room 8 | ⬜ Pending | To be completed |
 | Room 9 | ⬜ Pending | To be completed |
 | … | ⬜ Pending | … |
