@@ -22,7 +22,11 @@ Organized room by room, including notes, decoded messages, screenshots, etc...
 | Room 6: Egg-xecutable | ✅ Completed | Notes completed |
 | Room 7: Scan-ta Clause| ✅ Completed | Notes completed |
 | Room 8: Sched-yule conflict | ✅ Completed | Notes completed |
-| Room 9 | ⬜ Pending | To be completed |
+| Room 9: A Cracking Christmas| ✅ Completed | Notes completed |
+| Room 10: Tinsel Triage| ✅ Completed | Notes completed + ANSWERS |
+| Room 11 | ⬜ Pending | To be completed |
+| Room 12 | ⬜ Pending | To be completed |
+| Room 13 | ⬜ Pending | To be completed |
 | … | ⬜ Pending | … |
 
 
