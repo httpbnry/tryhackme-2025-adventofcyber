@@ -13,7 +13,7 @@ This scenario focuses on:
 
 In this room, *TryHackMe* tells us to login to **Microsoft Azure** via a list of access pass combinations, based on continents.
 
-So head to ![Mirosoft Azure](https://portal.azure.com/) and enter with one of their passes.
+So head to [Mirosoft Azure](https://portal.azure.com/) and enter with one of their passes.
 
 ---
 
@@ -41,7 +41,7 @@ In **Microsoft Azure** lets head search "*Microsoft Sentinel*" and click on it. 
 
 Ok, now when you're in the following page, on the left side we click on **Tables**.
 
-[screenshot1](./screenshot1.png)
+![screenshot1](./screenshot1.png)
 
 Then, we open *Custom Logs* and then we click on `Syslog_CL`, then we hit **Run**.
 
@@ -65,13 +65,13 @@ Now we are going to head to **Microsoft Sentinel --> Our Sentinel Instance --> T
 
 > This is what the room says, in my case i needed to head to ![Microsoft Defender](https://security.microsoft.com/incidents?)
 
-[screenshot2](./screenshot2.png)
+![screenshot2](./screenshot2.png)
 
 Lets start assesing the **Linux PrivEsc—Kernel Module Insertion**, by clicking on it, in my case i had to search it up. 
 
 When we enter we see the following:
 
-[screenshot3](./screenshot3.png)
+![screenshot3](./screenshot3.png)
 
 Sentinel Incident: Kernel Module Insertion
 
@@ -105,7 +105,7 @@ With the initial triage complete, McSkidy now examines the raw evidence behind t
 
 If we go to **Investigation and Response --> Incidents and Alerts --> Alerts --> Linux PrivEsc - Kernel Module Insertion --> Open Alert Page** and scroll down, we can see the full **Query Results**
 
-[screenshot4](./screenshot4.png)
+![screenshot4](./screenshot4.png)
 
 From this view, we can definitely see the actual name of the kernel module installed in each machine and the time it was installed.
 
@@ -128,7 +128,7 @@ After executing the query, it can be seen that multiple potentially suspicious e
 - Insertion of the malicious_mod.ko module.
 - Successful SSH authentication by the root user.
 
-[screenshot5](./screenshot5.png)
+![screenshot5](./screenshot5.png)
 
 Based on the surrounding events, including the execution of the cp command to create a shadow file backup, the addition of the user account Alice to the sudoers group, the modification of the backupuser account by root, and the successful SSH authentication by the root user, this activity appears highly unusual. The sequence suggests potential privilege escalation and persistence behaviour, indicating that the event may not be part of normal system operations and warrants further investigation.
 
