@@ -24,9 +24,13 @@ Organized room by room, including notes, decoded messages, screenshots, etc...
 | Room 8: Sched-yule conflict | ✅ Completed | Notes completed |
 | Room 9: A Cracking Christmas| ⬜ Pending  | Notes completed but sidequest key pending |
 | Room 10: Tinsel Triage| ✅ Completed | Notes completed + ANSWERS |
-| Room 11: Merry XXSMas | ✅ Completed | To be completed |
-| Room 12: Phishmas Greetings | ✅ Completed | To be completed |
-| Room 13: YARA mean one! | ✅ Completed | To be completed |
+| Room 11: Merry XXSMas | ✅ Completed | TNotes completed|
+| Room 12: Phishmas Greetings | ✅ Completed | Notes completed|
+| Room 13: YARA mean one! | ✅ Completed | Notes completed |
+| Room 14: DoorDasher’s Demise| ✅ Completed |Notes completed|
+| Room 15: Drone Alone| ✅ Completed | Notes completed |
+| Room 16: Registry Furensics | ✅ Completed | Notes completed |
+| Room 17: Hoperation Save McSkidy | ⬜ Pending | Notes completed but sidequest key pending |
 | … | ⬜ Pending | … |
 
 
